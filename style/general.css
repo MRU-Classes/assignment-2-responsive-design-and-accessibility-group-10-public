@@ -1,0 +1,144 @@
+:root {
+    --midnight-blue: #145da0;
+    --dark-blue: #0c2d48;
+    --blue: #2e8bc0;
+    --baby-blue: #b1d4e0;
+    --white: #ffffff;
+    --light-gray: #f5f5f5;
+    --dark-gray: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, var(--midnight-blue) 0%, var(--dark-blue) 100%);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: var(--blue);
+    padding: 8px 20px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 140px;
+}
+  
+.logo-place {
+    display: flex;
+    align-items: center;
+}
+        
+.logo {
+    height: 200px; 
+    width: auto;  
+}
+
+.headline {
+    color: white;
+    font-size: 65px;
+    font-family: 'Impact', 'Arial Rounded MT Bold', 'Franklin Gothic Medium', sans-serif;
+    font-weight: 400;
+    text-shadow: 1px 2px 0 var(--blue), 4px 4px 0 rgba(0,0,0,1.2);
+    letter-spacing: 1.5px;
+    margin: 15px 0 20px;
+    text-transform: uppercase;
+    padding: 8px 15px;
+    border-radius: 15px;
+    display: inline-block;
+}
+    
+.buttons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    margin-left: auto; 
+    padding-right: 40px; 
+}
+
+.buttons a {
+    display: inline-block;
+    padding: 20px 35px;
+    background-color: rgba(255,255,255,0.1);
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: larger;
+    border-radius: 60px;
+    transition: all 0.3s ease;
+    font-family: Arial, sans-serif;
+    border: 2px solid rgba(255,255,255,0.2);
+}
+
+.buttons a:hover {
+    background-color: #3498db;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.current a {
+    background-color: #0c2d48;
+    border: black;
+}
+
+.linkcolor {
+    color: #b24582;
+}
+
+.emails {
+    color: black;
+}
+
+footer {
+    background-color: #0c2d48;
+    color: white;
+    text-align: center;
+    padding: 20px 0; 
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+/* This should work when you shrink the tab */
+/* Small device */
+@media (max-width: 589px) {
+    header {
+        flex-direction: column; 
+        padding: 15px;
+    }
+    .logo-place {
+        margin-top: -50px;
+    }
+
+    .buttons {
+        margin-top: -140px;
+        flex-direction: column;
+        margin-right: 250px;
+    }
+
+    .buttons a {
+        padding: 10px 20px;
+    }
+}
+
+/* Medium device */
+
+@media (min-width: 590px) and (max-width: 789px) {
+    header {
+        padding: 15px 30px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .logo-place {
+        text-align: center;
+        margin-top: -50px;
+    }
+}

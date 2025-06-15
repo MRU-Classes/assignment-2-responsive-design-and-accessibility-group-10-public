@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Data Pro Group, About Us, Information, services, form, contact">
+    <meta name="author" content="Omer Adnan">
+    <link rel="stylesheet" href="style/about.css">
+    <link rel="stylesheet" href="style/general.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo-place">
+            <img src="images/DataProGroup.png" alt="Data Pro Group logo" title="logo" class="logo" width="200" height="200">
+        </div>
+        <nav>
+            <ul class ="buttons">
+                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <article>
+        <div class="image-class">
+            <h1 class="headline"> Data Pro Group | Homepage</h1>  
+            <div class = "jump-links"> 
+                <p><a href="#overview">Jump to Overview</a></p>
+                <p><a href="#contact">Jump to Contact</a></p>
+            </div>
+            <div>
+                <div>
+                    <img src="images/DataPerson.png" alt="Data Science individual working" title="data science" class="image" width="200" height="120">
+                    <br>
+                    <div class="image-citation"> Image source: <a href="https://builtin.com/data-science" target="_blank" rel="noopener noreferrer" class="linkcolor">Built In</a> </div>
+                </div> 
+            </div>
+        </div>
+    </article>
+
+    <main>
+        <section>    
+            <section class="services-grid">
+                <p class="introduction" id="overview">Data is changing the World</p>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <h2>Overview</h2>
+                        <p>Founded in 2021, Data Pro Group is a leading tutoring company for Bsc. Data Science students and other technical IT careers. This website created by Omer Adnan is your gateway into data science fundamentals and applications in today's tech-driven industries.</p>
+                    </div>
+                    <div class="grid-item">
+                        <h2>Services</h2>
+                        <p> At Data Pro Group, we specialize in preparing aspiring data scientists for academic and professional success. As part of our services, we bridge the gap between classroom theory and real-world data challenges, enabling students to succeed in their Bachelor of Science in Data Science program.</p>
+                        <p> In an industry where continuous learning is essential, we equip students with the foundational skills and adaptive mindset needed to navigate the ever-evolving data landscape. Whether you're mastering Python, wrestling with machine learning concepts, or learning to communicate data insights effectively, we provide the tools and guidance to transform you into a confident, job-ready data professional. </p>
+                    </div>
+                    <div class="grid-item">
+                        <h2> Jobs </h2>
+                        <p> With our mentorship, you will successfully be able to land the following positions:</p>
+                        <ul>
+                            <li> Data Scientist </li>
+                            <li> Data Analyst </li>
+                            <li> Data Engineer </li>
+                            <li> Machine Learning Developer </li>
+                            <li> Statistical Programmer </li>
+                            <li> Database Administrator </li>
+                        </ul>
+                        <p> Visit <a href="https://www.indeed.com/career-advice/finding-a-job/data-science-career" target="_blank" rel="noopener" class="linkcolor"> Indeed Job Descriptions</a> to learn more about your career and salaries related to your future roles. </p>
+                    </div>
+                    <div class="grid-item">
+                        <h2>Our Impact</h2>
+                        <table class="impact-table">
+                            <thead>
+                                <tr>
+                                    <th>Year</th>
+                                    <th>Students Tutored</th>
+                                    <th>Success Rate Landing Jobs</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2021</td>
+                                    <td>95</td>
+                                    <td>95%</td>
+                                </tr>
+                                <tr>
+                                    <td>2022</td>
+                                    <td>162</td>
+                                    <td>94%</td>
+                                </tr>
+                                <tr>
+                                    <td>2023</td>
+                                    <td>198</td>
+                                    <td>96%</td>
+                                </tr>
+                                <tr>
+                                    <td>2024</td>
+                                    <td>256</td>
+                                    <td>98%</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Total Students Helped</td>
+                                    <td colspan="1">711 Students</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="contactform">
+            <p class="ready" id="contact">Contact us today!</p>
+            <hr>
+            <br>
+            <form action="mailto:support@dataprogroup.ca" method="post">
+                
+                <div>
+                    <label for="name" class="names">*Name: </label>
+                    <input type="text" id="name" name="name" maxlength="50" required>
+
+                </div>
+
+                <div>
+                    <label for="email" class="mail">*Email:</label>
+                    <input type="email" id="email" name="email" placeholder="example@domain.com" maxlength="50" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                </div>
+
+                <div>
+                    <label for="message" class="msg">*Message:</label>
+                    <textarea id="message" name="message" rows="5" maxlength="1000" required></textarea>
+                </div>
+
+                <div>
+                    <label for="phone" class="tele">Phone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                </div>
+
+                <fieldset>
+                    <legend>*Contact Reason:</legend>
+                    <input type="radio" id="support" name="reason" value="support" required>
+                    <label for="support">Support</label><br>
+                    
+                    <input type="radio" id="purchase" name="reason" value="purchase">
+                    <label for="purchase">Purchase Inquiry</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Interested Packages</legend>
+                    <input type="checkbox" id="sprout" name="package" value="Data Sprout">
+                    <label for="sprout">Data Sprout ($29)</label><br>
+                    
+                    <input type="checkbox" id="launchpad" name="package" value="Analyst's Launchpad">
+                    <label for="launchpad">Analyst's Launchpad ($39)</label><br>
+                    
+                    <input type="checkbox" id="ml" name="package" value="ML Explorer">
+                    <label for="ml">ML Explorer ($39)</label><br>
+
+                    <input type="checkbox" id="dpp" name="package" value="Data Pipeline Pro">
+                    <label for="dpp">Data Pipeline Pro ($59)</label><br>
+
+                    <input type="checkbox" id="stats" name="package" value="Stats Master">
+                    <label for="stats"> Stats Master ($59) </label><br>
+
+                </fieldset>
+                <div class="button-place">
+                    <button type="submit">Send Message</button>
+                    <button type="reset">Clear Form</button>
+                </div>
+            </form>
+            <br>
+            <h2 class="ready">Book an appointment today!</h2>
+            <p class="emails">Email: <a href="mailto:support@dataprogroup.ca" class="linkcolor">support@dataprogroup.ca</a></p>
+        </section>
+    </main>
+    <footer> &copy; 2025 Data Pro Group. All rights reserved. </footer>
+</body>
+</html>

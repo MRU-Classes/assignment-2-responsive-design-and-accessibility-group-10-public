@@ -1,0 +1,339 @@
+main {
+    padding: 30px 0;
+}
+
+.jump-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: row;
+}
+
+.jump-links a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #0c2d48;
+    border: 3px solid #0c2d48;
+    background-color: #2e8bc0;
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    border-radius: 20px;
+    flex-wrap: wrap;
+}
+
+.jump-links a:hover {
+    background-color: #3498db;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,1);
+}
+
+.image-class {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    border-radius: 6px;
+}
+
+.image-class img {
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+    border-radius: 100px;
+    object-fit: cover;
+    opacity: 0.5;
+
+}
+
+.image-citation {
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.introduction {
+    font-size: 70px;
+    text-shadow: 2px 2px 0 #3498db, 4px 4px 0 rgba(0,0,0,0.2);
+}
+
+section {
+    margin: 25px 0;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(135deg, #145da0 0%, #0c2d48 100%);
+}
+
+@media (max-width: 589px) {
+    article {
+        padding: 15px;
+    }
+
+    .jump-links {
+        gap: 30px;
+
+    }
+
+    .jump-links a {
+        padding: 18px 16px;
+        font-size: 14px;
+        border: width 2px;
+
+    }
+    
+    .image-class img {
+        border-radius: 70px;
+ 
+    }
+}
+
+h2 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 600;
+    text-shadow: 2px 2px 0 #3498db, 4px 4px 0 rgba(0,0,0,0.2);
+}
+
+p {
+    line-height: 1.6;
+    font-size:20px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+th {
+    font-size: 20px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #145da0, #0c2d48);
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+td {
+    padding: 12px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    background: whitesmoke;
+}
+
+.grid-container {
+    display: grid;
+    gap: 25px;
+    padding: 30px; 
+    border-radius: 12px;
+}
+
+.grid-item {
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 25px;
+    border-radius: 8px;
+    border-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.grid-item li {
+    color: var(--white);
+    font-family: "DynaPuff", system-ui;
+    font-size: larger;
+    line-height: 2;
+    font-size: 16px;
+}
+
+.grid-item h2 {
+    font-size: 25px;
+    font-family: "Funnel Display", sans-serif;
+    margin-top: 0;
+    border-bottom: 3px solid #ffffff;
+    text-shadow: none;
+    padding-bottom: 10px;
+}
+
+.grid-item p {
+    font-family: "Funnel Display", sans-serif;
+    line-height: 2;
+    font-size: 16px;
+}
+
+/* This should work when you shrink the tab */
+/* Small device */
+
+@media (max-width: 589px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+}
+
+/* Medium device */
+
+@media (min-width: 590px) and (max-width: 789px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-item {
+        min-height: 200px;
+    }
+}
+
+/* Large device */
+
+@media (min-width: 790px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-item {
+        min-height: 250px;
+    }
+}
+
+.contactform {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(11, 42, 68, 0.7);
+}
+
+.ready {
+    color: #145da0;
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 0 #ffffff, 0 0 5px rgba(20, 93, 160, 0.5);
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: #0c2d48;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.mail, 
+.msg, 
+.tele, 
+.names {
+    font-size: 22px;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="tel"], 
+textarea {
+    padding: 12px;
+    border: 2px solid #b1d4e0;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background-color: #f8fbff;
+}
+
+fieldset {
+    border: 2px solid #b1d4e0;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f8fbff;
+}
+
+legend {
+    color: #0c2d48;
+    font-weight: 600;
+    padding: 0 10px;
+    font-size: 22px;
+}
+
+fieldset label {
+    margin-bottom: 10px;
+    display: inline;
+}
+
+fieldset div {
+    margin-bottom: 8px;
+}
+
+button {
+    padding: 14px 28px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px 5px;
+}
+
+button[type="submit"] {
+    background: #2e8bc0;
+    color: white;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background: #145da0;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(23, 98, 168, 0.3);
+}
+
+button[type="reset"] {
+    background-color: #b1d4e0;
+    color: #0c2d48;
+    font-weight: bold;
+}
+
+button[type="reset"]:hover {
+    background-color: #9ac7d4;
+    transform: translateY(-2px);
+    box-shadow:0 5px 15px rgba(23, 98, 168, 0.3);
+}
+
+.button-place {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
