@@ -111,40 +111,45 @@
             </section>
         </section>
         <section class="contactform">
-            <p class="ready" id="contact">Contact us today!</p>
-            <hr>
+            <p class="ready" id="contact">Are you ready to begin your journey? Contact us today!</p>
             <br>
             <form action="mailto:support@dataprogroup.ca" method="post">
-                
-                <div>
-                    <label for="name" class="names">*Name: </label>
-                    <input type="text" id="name" name="name" maxlength="50" required>
+                <fieldset>
+                    <legend class="requirement"> *Required </legend>
+                    <div>
+                        <label for="name" class="names">*Name: </label>
+                        <input type="text" id="name" name="name" maxlength="50" required>
 
-                </div>
+                    </div>
 
-                <div>
-                    <label for="email" class="mail">*Email:</label>
-                    <input type="email" id="email" name="email" placeholder="example@domain.com" maxlength="50" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-                </div>
 
-                <div>
-                    <label for="message" class="msg">*Message:</label>
-                    <textarea id="message" name="message" rows="5" maxlength="1000" required></textarea>
-                </div>
+                    <div>
+                        <label for="email" class="mail">*Email:</label>
+                        <input type="email" id="email" name="email" placeholder="example@domain.com" maxlength="50" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                    </div>
+
+                    <div>
+                        <label for="message" class="msg">*Message:</label>
+                        <textarea id="message" name="message" rows="5" maxlength="1000" required></textarea>
+                    </div>
+
+                    <fieldset>
+                        <legend>*Contact Reason:</legend>
+                        <input type="radio" id="support" name="reason" value="support" required>
+                        <label for="support">Support</label><br>
+                        
+                        <input type="radio" id="purchase" name="reason" value="purchase">
+                        <label for="purchase">Purchase Inquiry</label>
+                    </fieldset>
+
+                </fieldset> 
 
                 <div>
                     <label for="phone" class="tele">Phone:</label>
                     <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                 </div>
 
-                <fieldset>
-                    <legend>*Contact Reason:</legend>
-                    <input type="radio" id="support" name="reason" value="support" required>
-                    <label for="support">Support</label><br>
-                    
-                    <input type="radio" id="purchase" name="reason" value="purchase">
-                    <label for="purchase">Purchase Inquiry</label>
-                </fieldset>
+
 
                 <fieldset>
                     <legend>Interested Packages</legend>
@@ -175,7 +180,7 @@
         </section>
     </main>
     <footer> 
-        <div class="custom">Location: Data Headquarters Ave SW, Calgary, AB, T3J9Y, Canada </div>
+        <div class="custom">Location: Data Pro Headquarters Ave SW, Calgary, AB, T3J9Y, Canada </div>
         <br>
         <div class="custom"> Workday hours: 8 AM - 8 PM </div>
         <div class="custom"> Weekend hours: 11 AM - 6 PM </div>

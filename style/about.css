@@ -231,7 +231,6 @@ td {
     font-size: 32px;
     text-align: center;
     font-weight: bold;
-    margin-bottom: 25px;
     text-shadow: 1px 1px 0 #ffffff, 0 0 5px rgba(20, 93, 160, 0.5);
     
 }
@@ -337,3 +336,6 @@ button[type="reset"]:hover {
     margin-top: 20px;
 }
 
+.requirement {
+    color: #B00020;
+}
