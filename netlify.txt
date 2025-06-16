@@ -1,0 +1,4 @@
+dataprogroupa2comp2511.netlify.app
+
+Please click on the link above.
+Note: I deployed the project manually as I had trouble connecting MRU's classroom github to netlify.
