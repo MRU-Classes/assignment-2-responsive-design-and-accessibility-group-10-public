@@ -191,7 +191,13 @@ td {
 @media (max-width: 589px) {
     .grid-container {
         grid-template-columns: 1fr;
-        padding: 20px;
+        padding: 10px;
+    }
+
+    .grid-item {
+        min-width: 240px; 
+        padding: 15px; 
+        margin: 0 auto; 
     }
 }
 
